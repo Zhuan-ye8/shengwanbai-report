@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>北京升万百会计师事务所报告查询页</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+            background: linear-gradient(135deg, #0a3d8f 0%, #1a6bc4 40%, #2980d9 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 520px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #0d47a1, #1565c0);
+            padding: 32px 28px 24px;
+            text-align: center;
+            position: relative;
+        }
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px; left: 0; right: 0;
+            height: 30px;
+            background: #fff;
+            border-radius: 30px 30px 0 0;
+        }
+        .header h1 {
+            font-size: 20px; color: #fff; letter-spacing: 2px;
+        }
+        .header .sub {
+            font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 6px;
+        }
+        .content { padding: 10px 30px 30px; }
+        .row {
+            display: flex; align-items: flex-start;
+            padding: 14px 0; border-bottom: 1px solid #f0f2f5;
+        }
+        .row:first-child { padding-top: 6px; }
+        .row:last-of-type { border-bottom: none; }
+        .label {
+            width: 90px; flex-shrink: 0;
+            font-size: 13px; color: #8898aa; font-weight: 500; padding-top: 2px;
+        }
+        .val {
+            flex: 1; font-size: 15px; color: #1a2332; font-weight: 500; line-height: 1.6;
+        }
+        .val .hl { color: #1565c0; font-weight: 600; }
+        .cpa-item { font-size: 15px; color: #1a2332; font-weight: 500; }
+        .cpa-item .nm { color: #1565c0; font-weight: 600; }
+        .cpa-item .cd { font-weight: 400; color: #5a6a7a; font-size: 13px; }
+        .qr-wrap {
+            display: flex; justify-content: center;
+            padding: 24px 0 10px;
+        }
+        .qr-box {
+            width: 170px; height: 170px;
+            background: #f5f7fa;
+            border: 2px dashed #d0d7e5;
+            border-radius: 12px;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+        }
+        .qr-box span { font-size: 13px; color: #b0bec5; margin-top: 8px; }
+        .qr-hint { text-align: center; font-size: 12px; color: #b0bec5; margin-top: 4px; }
+        .rid {
+            background: #f8fafc; border-radius: 8px;
+            padding: 12px 16px; margin-top: 8px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .rid .rl { font-size: 12px; color: #8898aa; white-space: nowrap; }
+        .rid .rv { font-size: 14px; color: #1a2332; font-weight: 500; font-family: "Courier New", monospace; }
+        .footer {
+            background: #f8fafc; padding: 16px 30px;
+            text-align: center; border-top: 1px solid #eef1f5;
+        }
+        .footer p { font-size: 12px; color: #a0aeb8; letter-spacing: 0.5px; }
+        @media (max-width: 420px) {
+            .header h1 { font-size: 17px; }
+            .content { padding: 10px 20px 24px; }
+            .label { width: 78px; font-size: 12px; }
+            .val { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>报告查询页</h1>
+        <div class="sub">北京升万百会计师事务所</div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="label">报告标题</div>
+            <div class="val"><span class="hl">财务验收审计报告</span></div>
+        </div>
+        <div class="row">
+            <div class="label">报告文号</div>
+            <div class="val">升万百专审字【2025】第H-6624号</div>
+        </div>
+        <div class="row">
+            <div class="label">公司名称</div>
+            <div class="val">中国神华能源股份有限公司神东煤炭分公司</div>
+        </div>
+        <div class="row">
+            <div class="label">签字注册会计师</div>
+            <div class="val">
+                <div class="cpa-item"><span class="nm">李慎举</span><span class="cd">(230000057262)</span></div>
+                <div class="cpa-item"><span class="nm">项妍</span><span class="cd">(110101309933)</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">报告时间</div>
+            <div class="val">2025/12/29</div>
+        </div>
+        <div class="rid">
+            <span class="rl">报告编号</span>
+            <span class="rv">2025122965923654</span>
+        </div>
+        <div class="qr-wrap">
+            <div class="qr-box">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#b0bec5"><path d="M3 11h8V3H3v8zm2-6h4v4H5V5zM13 3v8h8V3h-8zm6 6h-4V5h4v4zM3 21h8v-8H3v8zm2-6h4v4H5v-4zm10-2h2v2h-2v-2zm2 2h2v2h-2v-2zm-2 2h2v2h-2v-2zm2 2h2v2h-2v-2zm-4-2h2v2h-2v-2zm-2 2h2v2h-2v-2z"/></svg>
+                <span>扫码验证</span>
+            </div>
+        </div>
+        <div class="qr-hint">微信扫码或长按识别二维码验证报告真伪</div>
+    </div>
+    <div class="footer">
+        <p>北京升万百会计师事务所(普通合伙）版权所有</p>
+    </div>
+</div>
+</body>
+</html>
